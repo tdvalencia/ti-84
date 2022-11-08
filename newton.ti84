@@ -1,0 +1,11 @@
+:Input "F(X):",Str1
+:Str1->Y1
+:"nDeriv(Y1,X,X)"->Y2
+:Input "GUESS:", X
+:Input "ITER:",N
+:N->dim(L1)
+:For(I,1,N,1)
+:Disp X
+:X->L1(I)
+:X-Y1(X)/Y2(X)->X
+:End

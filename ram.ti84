@@ -1,0 +1,18 @@
+:Prompt A,B
+:Input "NO. SUBINT=",NO
+:(B-A)/N->H
+:0->L
+:0->M
+:For(K,1,N,1)
+:Y1(A+(K-1)H)+L->L
+:Y1(A+(K-.5)H)+M->M
+:End
+:L-Y1(A)+Y1(B)->R
+:Disp "LEFT="
+:Disp HL
+:Disp "MID="
+:Disp HM
+:Disp "RIGHT="
+:Disp HR
+:Disp "TRAP="
+:Disp ((HL+HR)/2)

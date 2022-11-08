@@ -1,0 +1,15 @@
+:Input "DY/DX:",Str1
+:Input "X1:",X
+:Input "Y1:",Y
+:Input "XF:",N
+:Input "DX:",D
+:ClrHome
+:0->F
+:For(X,X,N,D)
+:F+1->F
+:X->L1(F)
+:Y->L2(F)
+:Disp {X,Y}
+:expr(Str1)->E
+:Y+E*D->Y
+:End
